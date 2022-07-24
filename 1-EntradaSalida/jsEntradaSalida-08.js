@@ -1,9 +1,63 @@
 /*
-Debemos lograr tomar Los numeros por ID ,
-transformarlos a enteros (parseInt),realizar la operación correcta y 
-mostrar el resto entre el dividendo y el divisor.
-ej.: "El resto es 0 ."*/
+Pose, Enzo DIV Z
+Ejercicio clase repaso
+Ingresar el valor del dólar oficial y el valor del dólar blue.
+Mostrar la diferencia expresada en porcentaje entre una cotización y otra.
+
+*/
 function SacarResto()
 {
-	alert("ok");
+	
+		var dolarOf;
+		var dolarBlue;
+		var resta;
+		var division;
+		var resultadoFinal;
+		var mensaje;
+		
+		dolarOf = document.getElementById("txtIdNumeroDividendo").value;
+		dolarBlue = document.getElementById("txtIdNumeroDivisor").value;
+        
+		parseFloat(dolarOf);
+		parseFloat(dolarBlue);
+		
+		resta = dolarBlue - dolarOf;
+		division = resta / dolarOf;
+		resultadoFinal = division * 100;
+		mensaje = "La diferencia es de: " + resultadoFinal.toFixed(0) + "%";
+
+		alert(mensaje);
+
+		
+
+			
 }
+//txtIdNumeroDividendo
+//txtIdNumeroDivisor
+/*var dividendo; 
+	var divisor;
+    var resultado;
+	var mensaje;
+
+	dividendo = parseInt(txtIdNumeroDividendo.value);
+	divisor = parseInt(txtIdNumeroDivisor.value);
+	
+	resultado = dividendo % divisor;
+    
+	mensaje = "El resto es: " + resultado;
+ 	
+	alert(mensaje)
+	
+	dolarOf = document.getElementById("txtIdNumeroDividendo)").value;
+			dolarBlue = document.getElementById("txtIdNumeroDivisor").value;
+
+			dolarOf = parseInt(dolarOf);
+			dolarBlue = parseInt(dolarBlue);
+
+			diferencia = (dolarBlue / dolarBlue)* 100;
+			resultadoFinal = (diferencia -100);
+			mensaje = "La diferencia es de: " + resultadoFinal + "%";
+		    
+			alert(mensaje);
+	
+	*/
